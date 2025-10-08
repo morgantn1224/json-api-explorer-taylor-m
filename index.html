@@ -20,11 +20,16 @@
                 <label for="bodyInput">Body:</label>
                 <textarea id="bodyInput" name="body" rows="4" required></textarea>
             </div>
-            <button type="submit">Submit Post</button>
+            <button id="submitButton" type="submit">Submit Post</button>
         </form>
         <div id="formError"></div>
         <div id="formSuccess"></div>
     </section>
+
+    <div>
+        <p id="loadingDisplay" ></p>
+        <!-- <p id="loadingDisplay" style="visibility:visible">Loading...</p> -->
+    </div>
 
     <section>
         <h2>Posts</h2>
