@@ -49,7 +49,7 @@ submitButton.addEventListener('click', (event) => {
     }).then(response => response.json()).then(json => console.log(json));
 
     postList.innerHTML += `<h1>${title}</h1>\n<p>${body}<\p>`;
-       
+    loadingDisplay.innerHTML = `Loading...`;   
     setTimeout(()=>{
         loadingDisplay.innerHTML = `Post submitted! Title: ${title}`;
     }, 3000);
